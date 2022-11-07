@@ -1,0 +1,124 @@
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+Display:wght@400;700&family=Roboto:wght@400;700&display=swap");
+
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  background-color: #005663;
+}
+
+.container {
+  padding: 15px;
+  width: 480px;
+
+  border-radius: 8px;
+  background-color: #f5f9f9;
+
+  color: #212427;
+  font-family: "Roboto", sans-serif;
+  letter-spacing: 1px;
+}
+
+.container-header h2 {
+  font-size: 36px;
+  display: flex;
+  justify-content: center;
+}
+
+.container-header-table {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 30px;
+}
+
+.container-header-table-column {
+  margin-top: 30px;
+}
+
+.container-header-table-column p {
+  font-weight: bold;
+  font-size: 18px;
+
+  margin-bottom: 10px;
+  text-decoration: underline;
+}
+
+.container-header-table-column ul {
+  padding: 0;
+}
+
+.container-header-table-column ul li {
+  list-style: none;
+  font-size: 18px;
+}
+
+.container-header-table-column:nth-child(2) {
+  margin-left: 20%;
+}
+
+.container-body {
+  padding: 15px;
+  border-radius: 4px;
+  border: 2px solid #005663;
+}
+
+.container-body h1 {
+  text-align: center;
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.container-body div {
+  display: flex;
+  flex-direction: column;
+
+  margin-bottom: 15px;
+}
+
+.container-body div label {
+  margin-bottom: 5px;
+  letter-spacing: 1px;
+}
+
+.container-body div input {
+  padding: 5px;
+}
+
+.container-body button {
+  width: 100%;
+  margin-top: 15px;
+
+  border: none;
+  padding: 5px;
+  border-radius: 4px;
+  background-color: #005663;
+
+  color: #fff;
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+  font-weight: bold;
+}
+
+.container-body button:hover {
+  cursor: pointer;
+  background-color: #005663d3;
+}
+
+.container-body .message {
+  width: 100%;
+  text-align: center;
+  margin-top: 25px;
+  padding: 5px;
+  border-radius: 4px;
+}
+
+.container-body .message.success {
+  background-color: #5e76c1;
+  color: #fff;
+}
+
+.container-body .message.error {
+  background-color: #d33e30;
+  color: #fff;
+}

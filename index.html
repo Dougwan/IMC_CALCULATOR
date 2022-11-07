@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>IMC: Cálculo de Índice de Massa Corporal</title>
+
+    <link rel="stylesheet" href="./styles/reset.css" />
+    <link rel="stylesheet" href="./styles/style.css" />
+  </head>
+  <body>
+    <section class="container">
+      <div class="container-header">
+        <h2>Tabela IMC</h2>
+
+        <div class="container-header-table">
+          <div class="container-header-table-column">
+            <p>IMC</p>
+            <ul>
+              <li class="stage_1">Menos do que 18,5</li>
+              <li class="stage_2">Entre 18,5 e 24,9</li>
+              <li class="stage_3">Entre 25 e 29,9</li>
+              <li class="stage_4">Entre 30 e 34,9</li>
+              <li class="stage_5">Entre 35 e 39,9</li>
+              <li class="stage_6">Mais do que 40</li>
+            </ul>
+          </div>
+
+          <div class="container-header-table-column">
+            <p>Resultado</p>
+            <ul>
+              <li class="stage_1">Abaixo do peso</li>
+              <li class="stage_2">Peso normal</li>
+              <li class="stage_3">Sobrepeso</li>
+              <li class="stage_4">Obesidade grau 1</li>
+              <li class="stage_5">Obesidade grau 2</li>
+              <li class="stage_6">Obesidade grau 3</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="container-body">
+        <h1>Calcule seu IMC</h1>
+
+        <div>
+          <label for="weight">Peso (KG):</label>
+          <input type="number" name="weight" id="weight" />
+        </div>
+
+        <div>
+          <label for="height">Altura (CM):</label>
+          <input type="number" name="height" id="height" step="1" min="1" />
+        </div>
+
+        <button id="calculate-button">Calcular</button>
+
+        <div id="message-box" class="message">
+          <p></p>
+        </div>
+      </div>
+    </section>
+  </body>
+
+  <script src="./js/main.js"></script>
+</html>
